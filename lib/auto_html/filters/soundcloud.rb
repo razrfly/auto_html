@@ -2,7 +2,7 @@
 
 # set these options and default values
 # :width => '100%', :height => 166, :auto_play => false, :theme_color => '00FF00', :color => '915f33', :show_comments => false
-AutoHtml.add_filter(:soundcloud).with(:width => '100%', :height => 166, :auto_play => false, :theme_color => '00FF00', :color => '915f33', :show_comments => false, :show_artwork => false) do |text, options|
+AutoHtml.add_filter(:soundcloud).with(:width => '100%', :height => 300, :auto_play => false, :theme_color => '00FF00', :color => 'f6382d', :show_comments => false, :show_artwork => false) do |text, options|
   require 'uri'
   require 'net/http'
   text.gsub(/(https?:\/\/)?(www.)?soundcloud\.com\/\S*/) do |match|
