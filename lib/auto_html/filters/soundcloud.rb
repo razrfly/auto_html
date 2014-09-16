@@ -12,9 +12,9 @@ AutoHtml.add_filter(:soundcloud).with(:width => '100%', :height => 166, :auto_pl
     width = options[:width]
     height = options[:height]
     auto_play = options[:auto_play]
-    theme_color = options[:theme_color]
-    color = options[:color]
-    show_artwork = options[:show_artwork]
+    show_user = options[:show_user]
+    hide_related = options[:hide_related]
+    visual = options[:visual]
     show_comments = options[:show_comments]
     %{<iframe width="#{width}" height="#{height}" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=#{new_uri}&auto_play=#{auto_play}&hide_related=#{hide_related}&show_comments=#{show_comments}&show_user=#{show_user}&visual=#{visual}"></iframe>}
   end
